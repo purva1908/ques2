@@ -6,7 +6,7 @@ import bodyParser from "body-parser"
 const server = express()
 server.use(bodyParser.json())
 
-server.use("/", myFunc)
+server.use("/student/studentsList", myFunc)
 server.listen(8080)
 
 function myFunc(req,res){
